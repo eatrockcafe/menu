@@ -348,3 +348,8 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Impostazioni Personali VSC + DEVELOPER
+*.code-workspace
+/dev
+._*
