@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="all,follow,index">
+    <meta name="googlebot" content="index,follow,snippet">
+    <!-- autor -->
+    <title>Eat Rock Cafe</title>
+    <meta name="keywords" content="">
+    <link rel="icon" href="imgs/favicon/icon-logo.png">
+    <link rel="shortcut icon" href="imgs/favicon/icon-logo.png">
+    <link rel="apple-touch-icon" href="imgs/favicon/icon-logo.png">
+    <meta name="author" content="EatRockCafe">
+    <meta name="description" content="Food">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <link rel="alternate" type="application/atom+xml" title="Feed per un mio sito" href="feed/" />
+    <!-- javascript -->
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <nav class="hamburgher"></nav>
+      <div class="logo"><img src="imgs/eat-rock-cafe-brand-small.png" alt=""></div>
+    </header>
+
+    <main>
+
+      <h1>Panino</h1>
+      <h3>Completa il tuo panino con l'ingredienti preferiti</h3>
+
+      <form class="" action="send.php" method="post">
+
+        <div>
+          <input type="radio" name="panino" id="classico">
+          <label for="classico">Pane Classico</label>
+          <input type="radio" name="panino" id="sesamo">
+          <label for="sesamo">Pane Al Sesamo</label>
+          <input type="radio" name="panino" id="classico_piastrato">
+          <label for="classico_piastrato">Classico Piastrato</label>
+          <input type="radio" name="panino" id="al_sesamo_piastrato">
+          <label for="al_sesamo_piastrato">Al Sesamo Piastrato</label>
+        </div>
+
+        <p>
+          Consigliamo che i nostri panini vengano serviti a temperatura ambiente per non alterare le caratteristiche e la qualità
+        </p>
+        
+        <hr>
+        <h2>Carne</h2>
+        <hr>
+
+        <h3>Pezzata Rossa</h3>
+
+        <div>
+          <input type="radio" name="carne" id="pezzata_r_singolo">
+          <label for="pezzata_r_singolo">Hamburger gr 180</label>
+          <input type="radio" name="carne" id="pezzata_r_doppio">
+          <label for="pezzata_r_doppio">Doppio Hamburger <br>gr 180+180</label>
+        </div>
+
+        <h3>Black Angus IGP</h3>
+
+        <div>
+          <input type="radio" name="carne" id="angus_singolo">
+          <label for="angus_singolo">Hamburger gr 200</label>
+          <input type="radio" name="carne" id="angus_doppio">
+          <label for="angus_doppio">Doppio Hamburger <br>gr 200+200</label>
+        </div>
+
+        <h2>Cottura</h2>
+
+        <div>
+          <input type="radio" name="cottura" id="al_sangue">
+          <label for="al_sangue">Al Sangue</label>
+
+          <input type="radio" name="cottura" id="media" checked>
+          <label for="media">Media</label>
+
+          <input type="radio" name="cottura" id="ben_cotta">
+          <label for="ben_cotta">Ben Cotta</label>
+        </div>
+
+        <hr>
+        <h2>Contorni</h2>
+        <hr>
+
+        <h3>Le Verdure</h3>
+
+          <input type="checkbox" name="verdure" id="insalata">
+          <label for="insalata">Insalata (gratis)</label>
+
+          <input type="checkbox" name="verdure" id="rucola">
+          <label for="rucola">Rucola (gratis)</label>
+
+          <input type="checkbox" name="verdure" id="radicchio">
+          <label for="radicchio">Radicchio</label>
+
+          <input type="checkbox" name="verdure" id="pomodoro">
+          <label for="pomodoro">Pomodoro</label>
+
+          <input type="checkbox" name="verdure" id="zucchine_grigliate">
+          <label for="zucchine_grigliate">Zucchine grigliate</label>
+
+          <input type="checkbox" name="verdure" id="peperoni">
+          <label for="peperoni">Peperoni</label>
+
+          <input type="checkbox" name="verdure" id="cipolla_ramata_di_tropea">
+          <label for="cipolla_ramata_di_tropea">Cipolla ramata di Tropea</label>
+
+          <input type="checkbox" name="verdure" id="funghi_trifolati">
+          <label for="funghi_trifolati">Funghi trifolati</label>
+
+          <input type="checkbox" name="verdure" id="cetrioli_in_salamoia">
+          <label for="cetrioli_in_salamoia">Cetrioli in salamoia aromatica</label>
+
+          <input type="checkbox" name="verdure" id="melanzane_grigliate">
+          <label for="melanzane_grigliate">Melanzane grigliate</label>
+
+          <input type="checkbox" name="verdure" id="parmigiana_di_melanzane">
+          <label for="parmigiana_di_melanzane">Parmigiana di melanzane</label>
+
+        <h3>Gli Ingredienti Special</h3>
+
+          <input type="checkbox" name="ingr_special" id="uova_all’occhio_di_bue">
+          <label for="uova_all’occhio_di_bue">Uova di galline nostrane all’Occhio di Bue</label>
+
+          <input type="checkbox" name="ingr_special" id="bacon_croccante">
+          <label for="bacon_croccante">Bacon Croccante</label>
+
+          <input type="checkbox" name="ingr_special" id="prosc_cotto">
+          <label for="prosc_cotto">Prosciutto Cotto DOP</label>
+
+          <input type="checkbox" name="ingr_special" id="prosc_crudo">
+          <label for="prosc_crudo">Prosciutto Crudo “Renzini” (Norcia)</label>
+
+          <input type="checkbox" name="ingr_special" id="speck_trentino">
+          <label for="speck_trentino">Speck Trentino</label>
+
+          <input type="checkbox" name="ingr_special" id="lardo_di_nero_calabrese">
+          <label for="lardo_di_nero_calabrese">Lardo di Nero Calabrese</label>
+
+          <input type="checkbox" name="ingr_special" id="mort_tamburini_bologna">
+          <label for="mort_tamburini_bologna">Mortadella “Tamburini” (Bologna)</label>
+
+          <input type="checkbox" name="ingr_special" id="pancetta_di_nero_calabrese">
+          <label for="pancetta_di_nero_calabrese">Pancetta di maialino nero Calabrese</label>
+
+          <input type="checkbox" name="ingr_special" id="mort_cinghiale_al_tartufo">
+          <label for="mort_cinghiale_al_tartufo">Mortadella di cinghiale al tartufo “Renzini” (Norcia)</label>
+
+        <h3>Formaggi</h3>
+
+          <input type="checkbox" name="formaggi" id="caciocavallo">
+          <label for="caciocavallo">Caciocavallo de<br>“Il Mulino”</label>
+
+          <input type="checkbox" name="formaggi" id="cheddar">
+          <label for="cheddar">Cheddar Westcombe</label>
+
+          <input type="checkbox" name="formaggi" id="gorgonzola">
+          <label for="gorgonzola">Gorgonzola DOP o IGP</label>
+
+          <input type="checkbox" name="formaggi" id="taleggio">
+          <label for="taleggio">Taleggio DOP</label>
+
+          <input type="checkbox" name="formaggi" id="primo_sale">
+          <label for="primo_sale">Primo Sale de<br>“Il Mulino”</label>
+
+          <input type="checkbox" name="formaggi" id="mozzarella">
+          <label for="mozzarella">Mozzarella de<br>“Il Mulino”</label>
+
+        <h3>I Sott’olio</h3>
+
+          <input type="checkbox" name="sott_olio" id="melanzane_sott_olio">
+          <label for="melanzane_sott_olio">Melanzane a filetti</label>
+
+          <input type="checkbox" name="sott_olio" id="pomodori_secchi">
+          <label for="pomodori_secchi">Pomodori secchi</label>
+
+          <input type="checkbox" name="sott_olio" id="carciofini">
+          <label for="carciofini">Carciofini grigliati</label>
+
+        <h3>Creme e Patè</h3>
+
+          <input type="checkbox" name="creme_e_pate" id="crema_di_noce">
+          <label for="crema_di_noce">Crema di noce fatta da noi</label>
+
+          <input type="checkbox" name="creme_e_pate" id="nduja">
+          <label for="nduja">N’duja di Nero Calabrese</label>
+
+        <p>
+          Tutti gli hamburger sono senza glutine,
+          senza lattosio, senza addensanti e senza coloranti.
+          Prima del servizio si prega di far presente al personale
+          di sala eventuali intolleranze e/o allergie.
+        </p>
+
+        <button class="btn_table" type="button" name="button">Prepara</button>
+      </form>
+    </main>
+    <!-- <script src="js/script.js" charset="utf-8"></script> -->
+  </body>
+
+</html>
