@@ -18,11 +18,25 @@
   /* border: 1px solid white; */
 }
 
-html,
-body {
+html {
   background: var(--color2);
+  display: block;
+  position: absolute;
   width: 100%;
   height: 100%;
+}
+
+body {
+  display: block;
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  overflow: hidden;
 }
 
 a,
