@@ -89,6 +89,7 @@ p {
   font-weight: bold;
   text-align: right;
   padding: 0px 0px 0px 20px;
+  white-space: nowrap;
 }
 
 /* index.html */
@@ -188,7 +189,7 @@ main {
   padding: 0px 0px 50px 0px;
 }
 
-tr .sub-categorie {
+tr .sub_categorie {
   display: block;
   margin: auto;
   padding: 10px;
@@ -219,7 +220,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-.form-table,
+.form_table,
 label {
   display: block;
   margin: 10px auto;
