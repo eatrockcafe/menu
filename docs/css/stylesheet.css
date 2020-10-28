@@ -38,7 +38,6 @@ body {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
-  /* overflow: hidden; */
 }
 
 a,
@@ -55,8 +54,13 @@ h3 {
 
 h3,
 .table_menu td h3 {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
   color: var(--color3);
   text-decoration: un-derline;
+  border-radius: 10px;
+
   text-align: center;
 }
 
@@ -69,17 +73,18 @@ p {
 }
 
 .table_menu {
-  background-color: antiquewhite;
+  background-color: rgb(227, 227, 227);
   color: var(--color1);
   border-radius: 10px;
   padding: 10px;
+  width: 100%;
 }
 
 .table_menu td {
   text-align: left;
 }
 
-.prezzi{
+.prezzi {
   display: block;
   font-weight: bold;
   text-align: right;
@@ -129,7 +134,7 @@ header {
 
 .logo {
   display: block;
-  margin: 30px auto;
+  margin: 50px auto;
   width: 40%;
 }
 
@@ -180,6 +185,17 @@ main {
   width: 90%;
   color: white;
   text-align: center;
+  padding: 0px 0px 50px 0px;
+}
+
+tr .sub-categorie {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .categoria ul {
