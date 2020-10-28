@@ -15,7 +15,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: helvetica;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 html {
@@ -50,13 +50,14 @@ a:visited {
 h1,
 h2,
 h3 {
-  margin: 20px 0;
-  color: var(--color)
+  margin: 15px 0;
 }
 
-h3 {
-  color: var(--color6);
+h3,
+.table_menu td h3 {
+  color: var(--color3);
   text-decoration: un-derline;
+  text-align: center;
 }
 
 hr {
@@ -65,6 +66,24 @@ hr {
 
 p {
   margin: 20px;
+}
+
+.table_menu {
+  background-color: antiquewhite;
+  color: var(--color1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.table_menu td {
+  text-align: left;
+}
+
+.prezzi{
+  display: block;
+  font-weight: bold;
+  text-align: right;
+  padding: 0px 0px 0px 20px;
 }
 
 /* index.html */
@@ -207,7 +226,5 @@ input[type="checkbox"]:checked+label {
   border-color: var(--color4);
   color: var(--color1);
 }
-
-.logo-home {}
 
 /* fine panino list */
